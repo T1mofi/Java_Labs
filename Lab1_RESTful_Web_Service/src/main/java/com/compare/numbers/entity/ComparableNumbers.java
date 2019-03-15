@@ -1,4 +1,4 @@
-package com.compare.numbers;
+package com.compare.numbers.entity;
 
 import java.util.ArrayList;
 import java.util.Collections;

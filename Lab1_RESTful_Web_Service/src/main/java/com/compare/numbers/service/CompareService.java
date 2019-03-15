@@ -1,4 +1,7 @@
-package com.compare.numbers;
+package com.compare.numbers.service;
+
+import com.compare.numbers.entity.ComparableNumbers;
+import com.compare.numbers.entity.CompareResult;
 
 import java.util.Collections;
 

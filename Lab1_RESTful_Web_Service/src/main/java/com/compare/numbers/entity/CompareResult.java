@@ -1,4 +1,4 @@
-package com.compare.numbers;
+package com.compare.numbers.entity;
 
 public class CompareResult {
 

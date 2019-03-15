@@ -1,5 +1,8 @@
-package com.compare.numbers;
+package com.compare.numbers.controller;
 
+import com.compare.numbers.entity.ComparableNumbers;
+import com.compare.numbers.entity.CompareResult;
+import com.compare.numbers.service.CompareService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
