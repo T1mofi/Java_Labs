@@ -7,10 +7,8 @@ public class ComparableNumbers {
 
     private ArrayList<Integer> comparableNumbers = new ArrayList<Integer>();
 
-    public ComparableNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        comparableNumbers.add(firstNumber);
-        comparableNumbers.add(secondNumber);
-        comparableNumbers.add(thirdNumber);
+    public ComparableNumbers(ArrayList<Integer> comparableNumbers) {
+        this.comparableNumbers = comparableNumbers;
     }
 
     public ArrayList<Integer> getComparableNumbers() {
