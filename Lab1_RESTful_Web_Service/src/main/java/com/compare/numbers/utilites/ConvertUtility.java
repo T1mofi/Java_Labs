@@ -4,15 +4,17 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 import java.util.ArrayList;
 
-public class ConvertFromStringToIntUtility {
+public class ConvertUtility {
     public static ArrayList<Integer> convertStringToInt(String arguments) {
-        ArrayList<Integer> argumrentsList = new ArrayList<>();
+
+        ArrayList<Integer> argumentsList = new ArrayList<>();
+
         for (String argument : arguments.split(",")) {
             if (NumberUtils.isNumber(argument)) {
-                argumrentsList.add(NumberUtils.toInt(argument, 0));
+                argumentsList.add(NumberUtils.toInt(argument, 0));
             }
         }
 
-        return argumrentsList;
+        return argumentsList;
     }
 }
