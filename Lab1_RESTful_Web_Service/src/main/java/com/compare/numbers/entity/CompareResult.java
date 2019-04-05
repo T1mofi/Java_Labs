@@ -2,13 +2,13 @@ package com.compare.numbers.entity;
 
 public class CompareResult {
 
-    private final int maxNumber;
+    private final int number;
 
-    public CompareResult(int maxNumber) {
-        this.maxNumber = maxNumber;
+    public CompareResult(int number) {
+        this.number = number;
     }
 
-    public int getMaxNumber() {
-        return maxNumber;
+    public int getNumber() {
+        return number;
     }
 }
