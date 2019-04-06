@@ -9,5 +9,5 @@ import java.util.Collections;
 
 @Service
 public interface CompareService {
-    CompareResult getMaximumNumber(ComparableNumbers numbers);
+    CompareResult compareNumber(ComparableNumbers numbers);
 }
