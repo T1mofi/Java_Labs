@@ -1,11 +1,9 @@
 package com.compare.numbers.entity;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class ComparableNumbers {
-
-    private ArrayList<Integer> comparableNumbers = new ArrayList<Integer>();
+    private ArrayList<Integer> comparableNumbers;
 
     public ComparableNumbers(ArrayList<Integer> comparableNumbers) {
         this.comparableNumbers = comparableNumbers;

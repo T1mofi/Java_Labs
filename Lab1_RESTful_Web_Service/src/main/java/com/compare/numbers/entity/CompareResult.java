@@ -1,7 +1,6 @@
 package com.compare.numbers.entity;
 
 public class CompareResult {
-
     private final int number;
 
     public CompareResult(int number) {
