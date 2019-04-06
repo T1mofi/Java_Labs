@@ -12,19 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 
-//http://localhost:8080//compareNumber?numbers=12,13,5
+//http://localhost:8080//findMaxNumber?numbers=12,-13,5
 
 @RestController
 public class CompareController {
     private CompareService service;
 
     @Autowired
-    public CompareController(@Qualifier("minNumberService") CompareService service) {
+    public CompareController(@Qualifier("maxNumberService") CompareService service) {
         this.service = service;
     }
 
-    @RequestMapping("/compareNumber")
-    public CompareResult greeting(@RequestParam(value="numbers", defaultValue="0") String numbers) {
+    @RequestMapping("/findMaxNumber")
+    public CompareResult findMaxNumber(@RequestParam(value="numbers", defaultValue="0") String numbers) {
         ArrayList<Integer> input = ConvertUtility.convertStringToInt(numbers);
         ComparableNumbers comparableNumbers = new ComparableNumbers(input);
 
