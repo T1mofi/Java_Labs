@@ -27,7 +27,7 @@ public class CompareController {
     }
 
     @RequestMapping("/findMaxNumber")
-    public ResponseEntity findMaxNumber(@RequestParam(value="numbers", defaultValue="0") String numbers) {
+    public ResponseEntity findMaxNumber(@RequestParam(value="numbers") String numbers) {
         try {
             ArrayList<Integer> input = ConvertUtility.convertStringToInt(numbers);
             ComparableNumbers comparableNumbers = new ComparableNumbers(input);
@@ -36,7 +36,5 @@ public class CompareController {
         } catch (Exception exception) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMessage());
         }
-
-
     }
 }

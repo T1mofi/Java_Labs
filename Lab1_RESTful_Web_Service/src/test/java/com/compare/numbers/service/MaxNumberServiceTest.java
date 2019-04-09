@@ -13,7 +13,6 @@ public class MaxNumberServiceTest {
 
     private MaxNumberService service = new MaxNumberService();
 
-
     @Test
     public void compareNumberTest() {
         ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(2, 5, 3));
@@ -24,6 +23,5 @@ public class MaxNumberServiceTest {
         CompareResult expected = new CompareResult(5);
 
         assertEquals(expected,actual);
-
     }
 }
