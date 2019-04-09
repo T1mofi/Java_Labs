@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.compare.numbers;
+package com.compare.numbers.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -37,18 +37,18 @@ public class CompareControllerTests {
     private MockMvc mockMvc;
 
     @Test
-    public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
+    public void noParamCompareShouldReturnDefaultValue() throws Exception {
 
-        this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, World!"));
+        this.mockMvc.perform(get("/findMaxNumber")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.number").value("0"));
+
     }
 
     @Test
-    public void paramGreetingShouldReturnTailoredMessage() throws Exception {
+    public void paramCompareShouldReturnMaxNumber() throws Exception {
 
-        this.mockMvc.perform(get("/greeting").param("name", "Spring Community"))
+        this.mockMvc.perform(get("/findMaxNumber").param("numbers", "12,-13,5"))
                 .andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
+                .andExpect(jsonPath("$.number").value("12"));
     }
-
 }

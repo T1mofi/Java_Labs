@@ -1,5 +1,7 @@
 package com.compare.numbers.entity;
 
+import java.util.Objects;
+
 public class CompareResult {
     private final int number;
 
@@ -9,5 +11,20 @@ public class CompareResult {
 
     public int getNumber() {
         return number;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CompareResult that = (CompareResult) o;
+        return number == that.number;
+    }
+
+    @Override
+    public String toString() {
+        return "CompareResult{" +
+                "number=" + number +
+                '}';
     }
 }

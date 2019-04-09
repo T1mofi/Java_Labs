@@ -10,7 +10,7 @@ import java.util.Collections;
 public class MaxNumberService implements CompareService {
     @Override
     public CompareResult compareNumber(ComparableNumbers numbers) {
-        Collections.sort(numbers.getComparableNumbers(),Collections.reverseOrder());
+        numbers.getComparableNumbers().sort(Collections.reverseOrder());
         int maximumNumber = numbers.getComparableNumbers().get(0);
 
         return new CompareResult(maximumNumber);
