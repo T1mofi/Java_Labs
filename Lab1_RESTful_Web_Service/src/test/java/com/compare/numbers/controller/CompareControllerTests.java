@@ -45,20 +45,4 @@ public class CompareControllerTests {
                 .andReturn().getResponse().getStatus();
         Assertions.assertThat(status).isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
-
-    @Test
-    public void noParamCompareShouldReturnDefaultValue() throws Exception {
-
-        this.mockMvc.perform(get("/findMaxNumber")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.number").value("0"));
-
-    }
-
-    @Test
-    public void paramCompareShouldReturnMaxNumber() throws Exception {
-
-        this.mockMvc.perform(get("/findMaxNumber").param("numbers", "12,-13,5"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.number").value("12"));
-    }
 }

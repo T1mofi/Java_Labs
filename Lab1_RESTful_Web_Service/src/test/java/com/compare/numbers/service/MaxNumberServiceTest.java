@@ -5,6 +5,7 @@ import com.compare.numbers.entity.CompareResult;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
@@ -15,10 +16,7 @@ public class MaxNumberServiceTest {
 
     @Test
     public void compareNumberTest() {
-        ArrayList<Integer> array = new ArrayList<>();
-        array.add(2);
-        array.add(5);
-        array.add(3);
+        ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(2, 5, 3));
 
         ComparableNumbers numbers = new ComparableNumbers(array);
 
