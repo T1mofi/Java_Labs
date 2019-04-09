@@ -28,15 +28,15 @@ public class CompareController {
 
     @RequestMapping("/findMaxNumber")
     public ResponseEntity findMaxNumber(@RequestParam(value="numbers", defaultValue="0") String numbers) {
-        ArrayList<Integer> input = new ArrayList<>();
         try {
-            input = ConvertUtility.convertStringToInt(numbers);
-        } catch (NumberFormatException ex) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+            ArrayList<Integer> input = ConvertUtility.convertStringToInt(numbers);
+            ComparableNumbers comparableNumbers = new ComparableNumbers(input);
+
+            return ResponseEntity.ok(service.compareNumber(comparableNumbers));
+        } catch (Exception exception) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMessage());
         }
 
-        ComparableNumbers comparableNumbers = new ComparableNumbers(input);
 
-        return ResponseEntity.ok(service.compareNumber(comparableNumbers));
     }
 }

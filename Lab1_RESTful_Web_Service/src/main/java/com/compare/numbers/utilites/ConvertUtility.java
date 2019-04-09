@@ -12,7 +12,7 @@ public class ConvertUtility {
             if (NumberUtils.isNumber(argument)) {
                 argumentsList.add(NumberUtils.toInt(argument, 0));
             } else {
-                throw new NumberFormatException("Incorrect input");
+                throw new IllegalArgumentException("Some parameter is not a number.");
             }
         }
 
