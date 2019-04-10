@@ -4,8 +4,6 @@ import com.compare.numbers.entity.ComparableNumbers;
 import com.compare.numbers.entity.CompareResult;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-
 @Service
 public class MinNumberService implements CompareService{
     @Override
