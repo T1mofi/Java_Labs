@@ -5,12 +5,11 @@ import com.compare.numbers.cache.Counter;
 import com.compare.numbers.entity.ComparableNumbers;
 import com.compare.numbers.entity.CompareResult;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MaxNumberServiceTest {
 

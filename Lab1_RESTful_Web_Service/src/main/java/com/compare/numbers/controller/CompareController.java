@@ -1,7 +1,6 @@
 package com.compare.numbers.controller;
 
 import com.compare.numbers.entity.ComparableNumbers;
-import com.compare.numbers.entity.CompareResult;
 import com.compare.numbers.service.CompareService;
 import com.compare.numbers.utilites.ConvertUtility;
 import org.springframework.beans.factory.annotation.Autowired;
