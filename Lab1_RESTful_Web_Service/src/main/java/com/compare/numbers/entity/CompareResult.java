@@ -22,9 +22,7 @@ public class CompareResult {
     }
 
     @Override
-    public String toString() {
-        return "CompareResult{" +
-                "number=" + number +
-                '}';
+    public int hashCode() {
+        return Objects.hash(number);
     }
 }

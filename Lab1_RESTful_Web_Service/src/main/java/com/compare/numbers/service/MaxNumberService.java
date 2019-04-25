@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Optional;
 
 @Service
 public class MaxNumberService implements CompareService {
@@ -33,8 +35,11 @@ public class MaxNumberService implements CompareService {
             return cache.findByComparableNumbers(comparableNumbers);
         } else {
             logger.debug("Calculate CompareResult");
-            comparableNumbers.getComparableNumbers().sort(Collections.reverseOrder());
-            int maximumNumber = comparableNumbers.getComparableNumbers().get(0);
+
+            ArrayList<Integer> arrayComparableNumbers =  new ArrayList<>(comparableNumbers.getComparableNumbers());
+            arrayComparableNumbers.sort(Collections.reverseOrder());
+            int maximumNumber = arrayComparableNumbers.get(0);
+
             CompareResult compareResult = new CompareResult(maximumNumber);
             cache.addCompareResultToCache(comparableNumbers, compareResult);
 
