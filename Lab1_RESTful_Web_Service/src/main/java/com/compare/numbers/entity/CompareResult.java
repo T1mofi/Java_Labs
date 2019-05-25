@@ -3,13 +3,13 @@ package com.compare.numbers.entity;
 import java.util.Objects;
 
 public class CompareResult {
-    private final int number;
+    private final Integer number;
 
     public CompareResult(int number) {
-        this.number = number;
+        this.number = new Integer(number);
     }
 
-    public int getNumber() {
+    public Integer getNumber() {
         return number;
     }
 

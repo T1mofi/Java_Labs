@@ -38,7 +38,7 @@ public class MaxNumberService implements CompareService {
 
             ArrayList<Integer> arrayComparableNumbers =  new ArrayList<>(comparableNumbers.getComparableNumbers());
             arrayComparableNumbers.sort(Collections.reverseOrder());
-            int maximumNumber = arrayComparableNumbers.get(0);
+            Integer maximumNumber = arrayComparableNumbers.get(0);
 
             CompareResult compareResult = new CompareResult(maximumNumber);
             cache.addCompareResultToCache(comparableNumbers, compareResult);
