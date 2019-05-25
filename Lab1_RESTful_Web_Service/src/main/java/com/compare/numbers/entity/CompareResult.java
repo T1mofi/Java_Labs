@@ -6,7 +6,7 @@ public class CompareResult {
     private final Integer number;
 
     public CompareResult(int number) {
-        this.number = new Integer(number);
+        this.number = number;
     }
 
     public Integer getNumber() {
@@ -18,7 +18,7 @@ public class CompareResult {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CompareResult that = (CompareResult) o;
-        return number == that.number;
+        return Objects.equals(number, that.number);
     }
 
     @Override

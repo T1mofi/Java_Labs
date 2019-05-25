@@ -1,6 +1,7 @@
 package com.compare.numbers.controller;
 
 import com.compare.numbers.entity.ComparableNumbers;
+import com.compare.numbers.entity.InputNumbersString;
 import com.compare.numbers.service.CompareService;
 import com.compare.numbers.utilites.ConvertUtility;
 
@@ -35,10 +36,10 @@ public class CompareController {
     public ResponseEntity findMaxNumber(@RequestParam(value="numbers") String numbers) {
         try {
             logger.info("Input {" + numbers + "}");
-            ArrayList<Integer> input = ConvertUtility.convertStringToInt(numbers);
-            ComparableNumbers comparableNumbers = new ComparableNumbers(input);
+            //ArrayList<Integer> input = ConvertUtility.convertStringToInt(numbers);
+            //ComparableNumbers comparableNumbers = new ComparableNumbers(input);
 
-            return ResponseEntity.ok(service.compareNumber(comparableNumbers));
+            return ResponseEntity.ok(service.compareNumber(new InputNumbersString(numbers)));
         } catch (Exception exception) {
             logger.error("Bad params");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMessage());

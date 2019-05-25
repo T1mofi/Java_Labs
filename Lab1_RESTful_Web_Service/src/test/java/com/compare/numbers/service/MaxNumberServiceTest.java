@@ -4,6 +4,7 @@ import com.compare.numbers.cache.CompareResultCache;
 import com.compare.numbers.cache.Counter;
 import com.compare.numbers.entity.ComparableNumbers;
 import com.compare.numbers.entity.CompareResult;
+import com.compare.numbers.entity.InputNumbersString;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -19,11 +20,10 @@ public class MaxNumberServiceTest {
 
     @Test
     public void compareNumberTest() {
-        ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(2, 5, 3));
 
-        ComparableNumbers numbers = new ComparableNumbers(array);
+        InputNumbersString inputNumbersString = new InputNumbersString("2,5,3");
 
-        CompareResult actual = service.compareNumber(numbers);
+        CompareResult actual = service.compareNumber(inputNumbersString);
         CompareResult expected = new CompareResult(5);
 
         assertEquals(expected,actual);

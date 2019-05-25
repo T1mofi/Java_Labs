@@ -4,6 +4,8 @@ import com.compare.numbers.cache.CompareResultCache;
 import com.compare.numbers.cache.Counter;
 import com.compare.numbers.entity.ComparableNumbers;
 import com.compare.numbers.entity.CompareResult;
+import com.compare.numbers.entity.InputNumbersString;
+import com.compare.numbers.utilites.ConvertUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,7 @@ import java.util.Optional;
 
 @Service
 public class MaxNumberService implements CompareService {
+
     private CompareResultCache cache;
     private Counter counter;
 
@@ -28,7 +31,11 @@ public class MaxNumberService implements CompareService {
     }
 
     @Override
-    public synchronized CompareResult compareNumber(ComparableNumbers comparableNumbers) {
+    public synchronized CompareResult compareNumber(InputNumbersString inputNumbersString) {
+
+        ArrayList<Integer> input = ConvertUtility.convertStringToInt(inputNumbersString.getStringNumbers());
+        ComparableNumbers comparableNumbers = new ComparableNumbers(input);
+
         logger.info("Increment " + counter.increment());
         if (cache.checkComparableNumbers(comparableNumbers)) {
             logger.debug("CompareResult from cache.");

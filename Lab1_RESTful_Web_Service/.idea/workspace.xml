@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90bd307-c842-4770-87c1-cf496b7c0d8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/InputNumbersString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/compare/numbers/controller/CompareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/compare/numbers/controller/CompareController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MaxNumberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MaxNumberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/compare/numbers/controller/CompareController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/compare/numbers/controller/CompareController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/compare/numbers/service/CompareService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/compare/numbers/service/CompareService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/compare/numbers/service/MaxNumberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/compare/numbers/service/MaxNumberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/compare/numbers/service/MinNumberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/compare/numbers/service/MinNumberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/compare/numbers/service/MaxNumberServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/compare/numbers/service/MaxNumberServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,16 +34,32 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="t1mofi_database@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="t1mofi_database@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="t1mofi_database@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="t1mofi_database: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/controller/CompareController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state relative-caret-position="330">
+              <caret line="41" column="93" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,44 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/cache/Counter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/cache/CompareResultCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MaxNumberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+            <state relative-caret-position="541">
+              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,12 +80,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="180">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
-                <element signature="method#equals#0;class#CompareResult#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/utilites/ConvertUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="90">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -112,26 +116,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/ComparableNumbers.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/InputNumbersString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/Application.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/ComparableNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#equals#0;class#ComparableNumbers#0" />
               </folding>
             </state>
           </provider>
@@ -172,20 +187,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareServiceImpl2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/compare/numbers/CompareControllerTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/utilites/ConvertUtility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/Application.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/cache/Counter.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/compare/numbers/utilites/ConvertUtilityTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/compare/numbers/controller/CompareControllerTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/ComparableNumbers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/cache/CompareResultCache.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/de94e519-44df-4101-b51e-e1130d11733b/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/InputNumbersString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/controller/CompareController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MaxNumberService.java" />
       </list>
@@ -219,6 +236,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,12 +323,40 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gs-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1_RESTful_Web_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1_RESTful_Web_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1_RESTful_Web_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="numbers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1_RESTful_Web_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="numbers" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,9 +367,10 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558593228805" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558778871500" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -466,9 +514,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="JUnit.MaxNumberServiceTest" />
         <item itemvalue="JUnit.All in gs-rest-service" />
         <item itemvalue="JUnit.ConvertUtilityTest" />
-        <item itemvalue="JUnit.MaxNumberServiceTest" />
         <item itemvalue="JUnit.com.compare.numbers in gs-rest-service" />
       </list>
     </recent_temporary>
@@ -509,29 +557,12 @@
       <workItem from="1558608194543" duration="165000" />
       <workItem from="1558687343033" duration="852000" />
       <workItem from="1558731013161" duration="1547000" />
-      <workItem from="1558760410648" duration="1077000" />
+      <workItem from="1558760410648" duration="6352000" />
+      <workItem from="1558775068124" duration="2713000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConvertUtilityTest - 2019.04.09 at 16h 43m 43s.xml">
-      <configuration name="ConvertUtilityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertUtilityTest - 2019.04.09 at 16h 44m 45s.xml">
-      <configuration name="ConvertUtilityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertUtilityTest - 2019.04.09 at 16h 45m 51s.xml">
-      <configuration name="ConvertUtilityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertUtilityTest - 2019.04.09 at 16h 47m 13s.xml">
-      <configuration name="ConvertUtilityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertUtilityTest - 2019.04.09 at 16h 49m 06s.xml">
-      <configuration name="ConvertUtilityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_gs-rest-service - 2019.04.10 at 14h 48m 53s.xml">
-      <configuration name="All in gs-rest-service" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_gs-rest-service - 2019.04.10 at 15h 01m 40s.xml">
       <configuration name="All in gs-rest-service" configurationId="JUnit" />
     </history-entry>
@@ -544,9 +575,27 @@
     <history-entry file="All_in_gs-rest-service - 2019.04.11 at 14h 58m 24s.xml">
       <configuration name="All in gs-rest-service" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MaxNumberServiceTest - 2019.05.25 at 12h 43m 11s.xml">
+      <configuration name="MaxNumberServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gs-rest-service - 2019.05.25 at 12h 46m 02s.xml">
+      <configuration name="All in gs-rest-service" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gs-rest-service - 2019.05.25 at 12h 46m 54s.xml">
+      <configuration name="All in gs-rest-service" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaxNumberServiceTest - 2019.05.25 at 13h 04m 35s.xml">
+      <configuration name="MaxNumberServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaxNumberServiceTest - 2019.05.25 at 13h 04m 58s.xml">
+      <configuration name="MaxNumberServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaxNumberServiceTest - 2019.05.25 at 13h 05m 34s.xml">
+      <configuration name="MaxNumberServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86441000" />
+    <option name="totallyTimeSpent" value="94429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +610,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30829757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -585,13 +634,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32867134" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32867134" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.13590844" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -648,13 +698,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/Config.java" />
     <entry file="file://$PROJECT_DIR$/target/test-classes/com/compare/numbers/CompareControllerTests.class" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -662,30 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/compare/numbers/controller/CompareControllerTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -702,26 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/utilites/ConvertUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -732,22 +735,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/ComparableNumbers.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="471">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/de94e519-44df-4101-b51e-e1130d11733b/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://de94e519-44df-4101-b51e-e1130d11733b/schema/t1mofi_database/table/cities/index/region_id" />
+    <entry file="das://de94e519-44df-4101-b51e-e1130d11733b/schema/t1mofi_database/table/cities" />
+    <entry file="das://de94e519-44df-4101-b51e-e1130d11733b/schema/t1mofi_database/table/regions" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/cache/CompareResultCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -761,20 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/CompareService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="method#equals#0;class#CompareResult#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MaxNumberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -783,8 +777,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/controller/CompareController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="330">
+          <caret line="41" column="93" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MinNumberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/ComparableNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#equals#0;class#ComparableNumbers#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/utilites/ConvertUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/CompareResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/compare/numbers/service/MaxNumberServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/entity/InputNumbersString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/compare/numbers/service/MaxNumberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
