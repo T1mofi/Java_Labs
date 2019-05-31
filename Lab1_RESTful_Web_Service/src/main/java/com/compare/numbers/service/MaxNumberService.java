@@ -4,7 +4,8 @@ import com.compare.numbers.cache.CompareResultCache;
 import com.compare.numbers.cache.Counter;
 import com.compare.numbers.entity.ComparableNumbers;
 import com.compare.numbers.entity.CompareResult;
-import com.compare.numbers.entity.InputNumbersString;
+import com.compare.numbers.entity.Input;
+import com.compare.numbers.repository.InputRepository;
 import com.compare.numbers.utilites.ConvertUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,11 +15,12 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Optional;
 
 @Service
 public class MaxNumberService implements CompareService {
 
+    @Autowired
+    private InputRepository inputRepository;
     private CompareResultCache cache;
     private Counter counter;
 
@@ -31,10 +33,10 @@ public class MaxNumberService implements CompareService {
     }
 
     @Override
-    public synchronized CompareResult compareNumber(InputNumbersString inputNumbersString) {
+    public synchronized CompareResult compareNumber(Input input) {
 
-        ArrayList<Integer> input = ConvertUtility.convertStringToInt(inputNumbersString.getStringNumbers());
-        ComparableNumbers comparableNumbers = new ComparableNumbers(input);
+        ArrayList<Integer> numbers = ConvertUtility.convertStringToInt(input.getParams());
+        ComparableNumbers comparableNumbers = new ComparableNumbers(numbers);
 
         logger.info("Increment " + counter.increment());
         if (cache.checkComparableNumbers(comparableNumbers)) {
@@ -42,6 +44,10 @@ public class MaxNumberService implements CompareService {
             return cache.findByComparableNumbers(comparableNumbers);
         } else {
             logger.debug("Calculate CompareResult");
+
+            if (inputRepository.findByParams(input.getParams()) == null) {
+                inputRepository.save(input);
+            }
 
             ArrayList<Integer> arrayComparableNumbers =  new ArrayList<>(comparableNumbers.getComparableNumbers());
             arrayComparableNumbers.sort(Collections.reverseOrder());

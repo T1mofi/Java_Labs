@@ -1,9 +1,8 @@
 package com.compare.numbers.controller;
 
-import com.compare.numbers.entity.ComparableNumbers;
-import com.compare.numbers.entity.InputNumbersString;
+import com.compare.numbers.entity.Input;
+import com.compare.numbers.repository.InputRepository;
 import com.compare.numbers.service.CompareService;
-import com.compare.numbers.utilites.ConvertUtility;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,9 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -23,6 +19,7 @@ import org.apache.logging.log4j.Logger;
 
 @RestController
 public class CompareController {
+
     private CompareService service;
 
     private final static Logger logger = LogManager.getLogger(CompareController.class);
@@ -36,10 +33,8 @@ public class CompareController {
     public ResponseEntity findMaxNumber(@RequestParam(value="numbers") String numbers) {
         try {
             logger.info("Input {" + numbers + "}");
-            //ArrayList<Integer> input = ConvertUtility.convertStringToInt(numbers);
-            //ComparableNumbers comparableNumbers = new ComparableNumbers(input);
 
-            return ResponseEntity.ok(service.compareNumber(new InputNumbersString(numbers)));
+            return ResponseEntity.ok(service.compareNumber(new Input(numbers)));
         } catch (Exception exception) {
             logger.error("Bad params");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMessage());

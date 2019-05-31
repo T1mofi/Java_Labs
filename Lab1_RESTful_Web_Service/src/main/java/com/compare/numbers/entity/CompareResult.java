@@ -1,6 +1,7 @@
 package com.compare.numbers.entity;
 
 import java.util.Objects;
+import javax.persistence.*;
 
 public class CompareResult {
     private final Integer number;

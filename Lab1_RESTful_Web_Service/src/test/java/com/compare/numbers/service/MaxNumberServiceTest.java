@@ -2,13 +2,9 @@ package com.compare.numbers.service;
 
 import com.compare.numbers.cache.CompareResultCache;
 import com.compare.numbers.cache.Counter;
-import com.compare.numbers.entity.ComparableNumbers;
 import com.compare.numbers.entity.CompareResult;
-import com.compare.numbers.entity.InputNumbersString;
+import com.compare.numbers.entity.Input;
 import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -21,9 +17,9 @@ public class MaxNumberServiceTest {
     @Test
     public void compareNumberTest() {
 
-        InputNumbersString inputNumbersString = new InputNumbersString("2,5,3");
+        Input input = new Input("2,5,3");
 
-        CompareResult actual = service.compareNumber(inputNumbersString);
+        CompareResult actual = service.compareNumber(input);
         CompareResult expected = new CompareResult(5);
 
         assertEquals(expected,actual);

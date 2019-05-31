@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="t1mofi_database@localhost" uuid="de94e519-44df-4101-b51e-e1130d11733b">
+    <data-source source="LOCAL" name="t1mofi_database@localhost" uuid="8dddd94f-9824-4b65-9bc4-152b126c043b">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
